@@ -113,10 +113,10 @@ Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.c
 		Sehingga, didapat 
 		\begin{equation}
 		\ddot{x} - \dfrac{(\dot{x^2}+\dot{y^2})}{l}\theta + g\theta =0
-		\end{equation} \\
+		\end{equation}
 		\begin{equation}
 		\ddot{y} - \dfrac{(\dot{x^2}+\dot{y^2})}{l}\theta + g =-g
-		\end{equation}} \\
+		\end{equation}} 
 ## Soal 2 | Bandul dengan sistem koordinat polar
 ![](UASFiskom0101.png)
 ### a 
@@ -297,7 +297,7 @@ Untuk menyelesaikan secara numerik, dibuat kode di C++ sebagai berikut:
 }
 ```
 
-dapat dijalankan secara daring menggunakan [http://cpp.sh/](http://cpp.sh/) atau aplikasi lainnya. Kode juga tersedia di repository GitHub ini di https://github.com/mnauvalfr/uasfiskom/blob/master/kodeno2d.cpp
+Kode ini dapat dijalankan secara daring menggunakan [http://cpp.sh/](cpp.sh/2ybae) atau aplikasi lainnya. Kode juga tersedia di repository GitHub ini di https://github.com/mnauvalfr/uasfiskom/blob/master/kodeno2d.cpp
 
 ## Soal 3 | Jaringan saraf tiruan dengan aplikasi TensorFlow
 
@@ -354,10 +354,10 @@ Fungsi yang dimaksud adalah
 }
 ```
 
-dengan input kromoson 0010110. Hasilnya adalah
-\
-![](UASFiskom0401.png)
+dengan input kromoson 0010110. Hasilnya adalah\
 
+![](UASFiskom0401.png)
+Kode ini dapat dijalankan secara daring menggunakan jsconsole.com atau aplikasi lainnya.
 ### b
 ```JavaScript
 // Get interpretation of position and group from chromosome
