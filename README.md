@@ -225,7 +225,7 @@ Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.c
 			\theta^{i+1}=\dfrac{g}{l} \sin \dot{\theta}^{i}\Delta t+\dot{\theta}^i 
 			\end{equation}
 ### d
-Untuk menyelesaikan secara numerik, dibuat kode di C++ sebagai berikut:
+Untuk menyelesaikan soal d, dibuat kode di C++ sebagai berikut:
 
 ```C++
 /*
