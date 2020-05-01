@@ -147,7 +147,7 @@ Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.c
 			
 			Untuk persamaan gerak pada sumbu $ \hat{r}$, berlaku
 			\begin{equation}
-			w \cos \theta +T = \dfrac{mv^2}{r} + m\dot{\theta^2}R
+			\omega \cos \theta +T = \dfrac{mv^2}{r} + m\dot{\theta^2}R
 			\end{equation}
 			\begin{equation}
 			-mg \cos \theta +T = m \dot{\theta^2}l
