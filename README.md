@@ -296,7 +296,7 @@ Untuk menyelesaikan secara numerik, dibuat kode di C++ sebagai berikut:
 }
 ```
 
-Kode ini dapat dijalankan secara daring menggunakan [http://cpp.sh/](cpp.sh/2ybae) atau aplikasi lainnya. Kode juga tersedia di repository GitHub ini di https://github.com/mnauvalfr/uasfiskom/blob/master/kodeno2d.cpp
+Kode ini dapat dijalankan secara daring di cpp.sh/2ybae. Kode juga tersedia di repository GitHub ini di https://github.com/mnauvalfr/uasfiskom/blob/master/kodeno2d.cpp
 
 ## Soal 3 | Jaringan saraf tiruan dengan aplikasi TensorFlow
 
@@ -357,7 +357,7 @@ dengan input kromoson 0010110. Hasilnya adalah
 
 ![](UASFiskom0401.png)
 
-Kode ini dapat dijalankan secara daring menggunakan [jsconsole.com](jsconsole.com) atau aplikasi lainnya.
+Kode ini dapat dijalankan secara daring menggunakan [jsconsole.com](jsconsole.com) atau aplikasi lainnya. Kode juga tersedia di GitHub berupa file .txt terpisah yang dapat dicompile di jsconsole.com (https://github.com/mnauvalfr/uasfiskom/blob/master/4a.txt)
 ### b
 Kode ini dibuat dengan nilai x0 = 111 dan y0 = 111
 ```JavaScript
@@ -387,7 +387,7 @@ function fitness(a, b) {			//fungsi untuk fitting (hanya bagian akar)
 }
 
 ```
-Kode ini dapat dijalankan secara daring menggunakan [jsconsole.com](jsconsole.com) atau aplikasi lainnya.
+Kode ini dapat dijalankan secara daring menggunakan [jsconsole.com](jsconsole.com) atau aplikasi lainnya. Kode juga tersedia di GitHub berupa file .txt terpisah yang dapat dicompile di jsconsole.com (https://github.com/mnauvalfr/uasfiskom/blob/master/4b.txt)
 ### c
 Kode ini dibuat dengan nilai x0 = 111 dan y0 = 111
 
@@ -468,6 +468,7 @@ return (result);
 }
 ```
 Kode ini dapat dijalankan secara daring menggunakan [jsconsole.com](jsconsole.com) atau aplikasi lainnya.
+Kode juga tersedia di GitHub berupa file .txt terpisah yang dapat dicompile di jsconsole.com (https://github.com/mnauvalfr/uasfiskom/blob/master/4c.txt)
 Hasil yang didapat adalah sebagai berikut:
 
 ![](UASFiskom0402.png)
@@ -531,9 +532,9 @@ Kromosom yang akan dicek, beserta hasilnya, adalah sebagai berikut
 
 ![](UASFiskom0409.png)
 
-Hasil maksimal yang diperoleh adalah kromoson 1011001 karena sama dengan kromoson threshold dengan fitness 1 dan kromoson yang paling mendekati 1011001 adalah kromoson 1001001 dengan nilai fitness 0,5 dari 5 iterasi yang dicoba.
+Hasil maksimal yang diperoleh adalah kromoson 1011001 karena sama dengan kromoson threshold dengan fitness 1 dan kromoson yang paling mendekati 1011001 adalah kromoson 1001001 dengan nilai fitness 0,5 dari 5 iterasi yang dicoba. Kode juga tersedia di GitHub berupa file .txt terpisah yang dapat dicompile di jsconsole.com (https://github.com/mnauvalfr/uasfiskom/blob/master/4d.txt)
 
-Selain dari kode di atas, juga tersedia file .js yang dapat langsung dieksekusi di browser yang ada di GitHub ini.
+Keempat kode dapat dijalankan secara langsung di browser dengan mengunduh file .rar di GitHub (https://github.com/mnauvalfr/uasfiskom/blob/master/UAS_Fiskom_4.rar), lalu dieksekusi di browser masing-masing. Saat menjalankan, seluruh isi zip harus dalam satu folder.
 ## Soal 5 | Research based learning
 
 ### a Tujuan
