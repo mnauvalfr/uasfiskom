@@ -119,33 +119,191 @@ Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.c
 		\ddot{y} - \dfrac{(\dot{x^2}+\dot{y^2})}{l}\theta + g =-g
 		\end{equation}} \\
 ## Soal 2 | Bandul dengan sistem koordinat polar
-
+![](UASFiskom0101.png)
 ### a Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
 
+Pertama diketahui posisi bandul sebagai berikut:
+T adalah gaya tegang tali, Fv adalah gaya viskositas akibat udara, dan W adalah berat.\\
+Persamaan gerak pada sumbu $\hat{\theta}$ dapat diturunkan 
+dengan mengingat $\alpha = \dfrac{d^2\theta}{dt^2} =\dfrac{M}{I}$, 
+dimana $\alpha$ adalah momentum sudut, M adalah momen, dan I adalah inersia.
+			
+			Torsi ditentukan oleh proyeksi gaya ke arah tangensial:
+			\begin{equation}
+			M = -mgL\sin \theta
+			\end{equation} 
+			Momen inersia pendulum adalah momen inersia lingkaran:
+			\begin{equation}
+			I = mL^2
+			\end{equation} 
+			Sehingga, persamaan gerak di sumbu $\hat{\theta}$ adalah, 
+			dengan mencoret suku-suku yang sama:
+			\begin{equation}
+			\dfrac{d^2\theta}{dt^2} = \dfrac {M}{I} =\dfrac{g \sin\theta}{L} 
+			\end{equation} 
+			\begin{equation}
+			\dfrac{d^2\theta}{dt^2} +  \dfrac{g  \sin\theta}{L}  =0
+			\end{equation} 
+			
+			Untuk persamaan gerak pada sumbu $ \hat{r}$, berlaku
+			\begin{equation}
+			w \cos \theta +T = \dfrac{mv^2}{r} + m\dot{\theta^2}R
+			\end{equation}
+			\begin{equation}
+			-mg \cos \theta +T = m \dot{\theta^2}l
+			\end{equation} 
+			\begin{equation}
+			 \dot{\theta^2}+\dfrac{g}{l} \cos \theta =\dfrac{T}{ml}
+			\end{equation} 
 ### b Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
-
+Hasil dari perhitungan menggunakan metode analitik digrafikkan di https://plotly.com/~Avestory/3/#/
+			
+			\begin{equation}
+			\dfrac{d^2\theta}{dt^2} - \dfrac{g\theta}{l} =0 
+			\end{equation} 
+			Persamaan diferensial ini adalah persamaan diferensial karakteristik, 
+			sehingga dengan memisalkan $\lambda_{12} = \pm \sqrt{\dfrac{g}{l}}i$, sehingga:
+			\begin{equation}
+			\theta = C\exp{\lambda_1t}+D\exp{\lambda_2t}
+			\end{equation} 
+			\begin{equation}
+			\theta = C (\cos \sqrt{\dfrac{g}{l}}t + i \sin \sqrt{\dfrac{g}{l}}t) +
+			D(\cos \sqrt{\dfrac{g}{l}}t - i \sin \sqrt{\dfrac{g}{l}}t)
+			\end{equation} 
+			\begin{equation}
+			\theta = (C+D) \cos \sqrt{\dfrac{g}{l}}t +  i (C-D) \sin \sqrt{\dfrac{g}{l}}t
+			\end{equation} 		
+			\begin{equation}
+			\theta = A \cos \sqrt{\dfrac{g}{l}}t +   B \sin \sqrt{\dfrac{g}{l}}
+			\end{equation} 	
+			Saat t = 0, asumsikan bandul berada di amplitudo ($\theta_{max}$) sehingga sudut maksimum.
+			\begin{equation}
+			\theta_{max} = A \cos 0 + 0 \Rightarrow \theta_{max} = A
+			\end{equation} 	
+			Didapat A = amplitudo, B  = 0.
+			Sehingga, pada akhirnya akan didapat 
+			\begin{equation}
+			\theta = A \cos  \sqrt{\dfrac{g}{l}}t, \\ \dot{\theta} =-\sqrt{\dfrac{g}{l}} A \sin \sqrt{\dfrac{g}{l}}t
+			\end{equation} 	
+			Untuk persamaan kedua, dengan mensubstitusikan persamaan sebelumnya,
+			\begin{equation}
+			\dot{\theta^2} + \dfrac{g}{l}cos\theta = \dfrac{T}{lm}
+			\end{equation} 
+			Karena menggunakan pendekatan sudut kecil, maka	
+			\begin{equation}
+			T \approx \left((\sqrt{\dfrac{g}{l}}A\sin \sqrt{\dfrac{g}{l}}t)^2 +\sqrt{\dfrac{g}{l}}\cos\theta\right)lm
+			\end{equation} 	
+			\begin{equation}
+			T \approx A^2 g \sin^2 (\sqrt{\dfrac{g}{l}}t) +m\sqrt{gl}  \cos \theta
+			\end{equation} 
+			
+			
+	
+			
 ### c Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
-
+Hasil dari perhitungan menggunakan metode numerik digrafikkan di https://plotly.com/~Avestory/1/#/
+		
+Dengan metode Euler,
+			\begin{equation}
+			\dfrac{df}{dx}= \dfrac{f(x+L)-f(x)}{h} \Rightarrow \dfrac{f^{i+1}-f^i}{\Delta x}
+			\end{equation}
+			Persamaan $\ddot{\theta}$ dan $\dot{\theta}$ dapat dirubah menjadi
+			\begin{equation}
+			\dot{\theta}=\dfrac{d\theta}{dt}=  
+			\dfrac{\theta^{i+1}-\theta^i}{\Delta t} \Rightarrow \theta^{i+1} = \dot{\theta}^i\Delta t+ \theta^i
+			\end{equation}
+			dan
+			\begin{equation}
+			\ddot{\theta}=\dfrac{g}{l} \sin \theta \Rightarrow  \dfrac{d\dot{\theta}^i}{dt} =  \dfrac{g}{l} \sin \theta
+			\end{equation}
+			\begin{equation}
+			 \dfrac{\dot{\theta}^{i+1}-\dot{\theta}^i}{\Delta t} = \dfrac{g}{l} \sin \theta^{i} 
+			\end{equation}
+			\begin{equation}
+			\theta^{i+1}=\dfrac{g}{l} \sin \dot{\theta}^{i}\Delta t+\dot{\theta}^i 
+			\end{equation}
 ### d
-Kode program berikut
+Untuk menyelesaikan secara numerik, dibuat kode di C++ sebagai berikut:
 
 ```C++
 /*
-	NamaProgram.cpp
+	kodeno2d.cpp
 	
-	Menghitung sesuatu
+	Menghitung solusi PDB menggunakan metode numerik
 */
 
-int main(int argc, char *argv[]) {
+			#include <iostream>
+			#include <cmath>
+			#include <fstream>
+			
+			using namespace std;
+			
+			int main(){
+			/* variabel yang digunakan */
+			float g,l,h,m,tt;
+			int i,n;
+			
+			g = 9.82;
+			
+			/*besar panjang tali*/
+			l=1;
+			/*besar massa*/
+			m=0.5;
+			/*total waktu analisis*/
+			tt = 10;
+			/*step waktu yang digunakan*/
+			h = 0.1;
+			
+			n = tt/h;
+			float theta[n],thetadot[n],f[n],T[n],t[n];
+			
+			for (i=0;i<n;i++){
+			t[i] = 0;
+			f[i] = 0;
+			T[i] = 0;
+			theta[i] = 0;
+			thetadot[i] = 0;
+			}
+			
+			/* pendefinisian awal */
+			theta[0] = 30*3.14/180;
+			thetadot[0] = 0;
+			
+			/* logika euler dan input data yang didapat ke file theta.txt */
+			ofstream myfile;
+			myfile.open ("theta.txt");
+			for (i=0; i<=n; i++){
+			theta[i+1] = theta[i] + thetadot[i]*h;
+			f[i] = (g/l)*sin(theta[i+1])*-1;
+			thetadot[i+1] = thetadot[i] + f[i]*h;
+			T[i] = l*m*(thetadot[i]*thetadot[i] + g*cos(theta[i])/l);
+			
+			t[i+1] = t[i] + h;
+			
+			myfile <<  t[i]  << "  "  << theta[i] << "  " << thetadot[i] << "  " << T[i] << "\n";
+			
+			cout << "t[" << i << "]: " << t[i] << "\n";
+			cout << "theta[" << i << "]: " << theta[i] << "\n";
+			cout << "thetadot[" << i << "]: " << thetadot[i] << "\n";
+			cout << "T[" << i << "]: " << T[i] << "\n" << "\n";
+			}
+			myfile.close();
+			
+			
+			/* terminasi program */
+			return 0;
 }
 ```
 
-dapat dijalankan secara daring menggunakan [http://cpp.sh/](http://cpp.sh/) atau aplikasi lainnya. Kode juga tersedia di repository GitHub ini
+dapat dijalankan secara daring menggunakan [http://cpp.sh/](http://cpp.sh/) atau aplikasi lainnya. Kode juga tersedia di repository GitHub ini di https://github.com/mnauvalfr/uasfiskom/blob/master/kodeno2d.cpp
 
 ## Soal 3 | Jaringan saraf tiruan dengan aplikasi TensorFlow
 
 ### a
-
+Dalam proses penyelesaian masalah, dataset yang telah diberikan dimasukkan terlebih dahulu ke dalam perangkat lunak Microsoft Excel untuk dianalisa bentuk persebaran datanya. Untuk tabel data pertama, terdapat persebaran data seperti berikut.
+![](UASFiskom0301.png)
+Berdasarkan persebaran data yang terdapat di tabel di atas, terlihat jelas bahwa data dapat dipisahkan dengan metode perceptron. Dengan data yang telah didapatkan, dilakukan uji coba di laman daring Artificial Neural Network Playground yang disediakan oleh Tensorflow. Ketentuan dan batasan uji coba yang terdapat adalah sebagai berikut. 
+![](UASFiskom0302.png)
 ### b
 
 ### c
