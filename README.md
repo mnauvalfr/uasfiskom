@@ -5,7 +5,7 @@ Catatan: jawaban dituliskan dalam format .tex, lalu dikonversi ke format MD deng
 Soal No.1
 =========
 
-![image](UASFiskom0201.png)
+![image](UASFiskom0101.png)
 
 1.  Didapat persamaan dalam setiap arah gerak bandul sebagai berikut, untuk gerak sumbu \(x\):
 
@@ -71,7 +71,7 @@ Soal No.1
 Soal No.2
 =========
 1.  Pertama diketahui posisi bandul sebagai berikut:
-    ![image](UASFiskom0201.png)
+    ![image](UASFiskom0101.png)
     T adalah gaya tegang tali, Fv adalah gaya viskositas akibat udara, dan W adalah berat.
     Persamaan gerak pada sumbu \(\hat{\theta}\) dapat diturunkan dengan mengingat \(\alpha = \dfrac{d^2\theta}{dt^2} =\dfrac{M}{I}\), dimana \(\alpha\) adalah momentum sudut, M adalah momen, dan I adalah inersia.
     Torsi ditentukan oleh proyeksi gaya ke arah tangensial:
