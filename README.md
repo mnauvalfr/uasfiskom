@@ -359,7 +359,7 @@ dengan input kromoson 0010110. Hasilnya adalah
 
 Kode ini dapat dijalankan secara daring menggunakan [jsconsole.com](jsconsole.com) atau aplikasi lainnya. Kode juga tersedia di GitHub berupa file .txt terpisah yang dapat dicompile di jsconsole.com (https://github.com/mnauvalfr/uasfiskom/blob/master/4a.txt)
 ### b
-Kode ini dibuat dengan nilai x0 = 111 dan y0 = 111
+Kode ini dibuat dengan nilai x0 = 111 dan y0 = 111:
 ```JavaScript
 main();
 // Define main function
@@ -389,7 +389,7 @@ function fitness(a, b) {			//fungsi untuk fitting (hanya bagian akar)
 ```
 Kode ini dapat dijalankan secara daring menggunakan [jsconsole.com](jsconsole.com) atau aplikasi lainnya. Kode juga tersedia di GitHub berupa file .txt terpisah yang dapat dicompile di jsconsole.com (https://github.com/mnauvalfr/uasfiskom/blob/master/4b.txt)
 ### c
-Kode ini dibuat dengan nilai x0 = 111 dan y0 = 111
+Kode ini dibuat dengan nilai x0 = 111 dan y0 = 111:
 
 ```JavaScript
 main();
@@ -478,7 +478,7 @@ Hasil yang didapat adalah sebagai berikut:
 ![](UASFiskom0404.png)
 
 ### d
-Kode ini sama dengan kode untuk 4b, namun masukannya diganti menjadi x0 =101 dan y0 = 100
+Kode ini sama dengan kode untuk 4b, namun masukannya diganti menjadi x0 =101 dan y0 = 100:
 ```JavaScript
 main();
 
@@ -538,13 +538,31 @@ Keempat kode dapat dijalankan secara langsung di browser dengan mengunduh file .
 ## Soal 5 | Research based learning
 
 ### a Tujuan
+Salah satu pemanfaatan terbaik untuk fisika komputasi adalah dalam analisis design dan data nuklir
+Tujuan dari analisis desain dan data nuklir adalah sebagai berikut:
+
+-Menentukan distribusi flux sumber.
+
+-Menentukan daya reaktor.
+
 
 ### b Rumusan masalah
 
+-Bagaimana grafik distribusi flux neutron suatu sumber reaktor silinder?
+
+-Berapa daya reaktor?
+
+
+
 ### c Metode
 
-### d Hasil dan diskusi
 
+### d Hasil dan diskusi
+Hasil dari pencarian fluks adalah distribusi fluks, Keff (koefisien pengali neutorn efektif) awal, dan fluks awal. Hasil dari pencarian daya adalahi nilai numerik daya.
 ### e Referensi
-1. Penulis, "Judul", Website, ..
-2. Penulis, "Judul", Journal, vol. no., pp. Bulan Tahun, DOI ..
+1.Ding, Zechuan.(2018). Solving Bateman Equation for Xenon Transient Analysis Using Numerical Methods.
+
+2. Duderstadt, J. and Hamilton, L. (1976). Nuclear Reactor Analysis. New York: Wiley & Sons.
+
+3. Stacey, Weston M. (2018). Nuclear Reactor Physics. 3rd ed. Wiley.
+
