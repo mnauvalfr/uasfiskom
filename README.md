@@ -353,9 +353,10 @@ Fungsi yang dimaksud adalah
 }
 ```
 
-dengan input kromoson 0010110. Hasilnya adalah\
+dengan input kromoson 0010110. Hasilnya adalah
 
 ![](UASFiskom0401.png)
+
 Kode ini dapat dijalankan secara daring menggunakan [jsconsole.com](jsconsole.com) atau aplikasi lainnya.
 ### b
 Kode ini dibuat dengan nilai x0 = 111 dan y0 = 111
@@ -386,7 +387,7 @@ function fitness(a, b) {			//fungsi untuk fitting (hanya bagian akar)
 }
 
 ```
-
+Kode ini dapat dijalankan secara daring menggunakan [jsconsole.com](jsconsole.com) atau aplikasi lainnya.
 ### c
 Kode ini dibuat dengan nilai x0 = 111 dan y0 = 111
 
@@ -466,7 +467,17 @@ function selection(threshold, a, p)
 return (result);
 }
 ```
+Kode ini dapat dijalankan secara daring menggunakan [jsconsole.com](jsconsole.com) atau aplikasi lainnya.
+Hasil yang didapat adalah sebagai berikut:
+
+![](UASFiskom0402.png)
+
+![](UASFiskom0403.png)
+
+![](UASFiskom0404.png)
+
 ### d
+Kode ini sama dengan kode untuk 4b, namun masukannya diganti menjadi x0 =101 dan y0 = 100
 ```JavaScript
 // Get interpretation of position and group from chromosome
 function getValues() {
@@ -489,7 +500,9 @@ function getValues() {
 	return [x, y, g];
 }
 ```
+Kode ini dapat dijalankan secara daring menggunakan [jsconsole.com](jsconsole.com) atau aplikasi lainnya.
 
+Selain dari kode di atas, juga tersedia file .js yang dapat langsung dieksekusi di browser yang ada di GitHub ini.
 ## Soal 5 | Research based learning
 
 ### a Tujuan
