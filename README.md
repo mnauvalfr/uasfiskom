@@ -122,11 +122,11 @@ Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.c
 ![](UASFiskom0101.png)
 ### a Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
 
-Pertama diketahui posisi bandul sebagai berikut:
-T adalah gaya tegang tali, Fv adalah gaya viskositas akibat udara, dan W adalah berat.\\
-Persamaan gerak pada sumbu $\hat{\theta}$ dapat diturunkan 
-dengan mengingat $\alpha = \dfrac{d^2\theta}{dt^2} =\dfrac{M}{I}$, 
-dimana $\alpha$ adalah momentum sudut, M adalah momen, dan I adalah inersia.
+			Pertama diketahui posisi bandul sebagai berikut:
+			T adalah gaya tegang tali, Fv adalah gaya viskositas akibat udara, dan W adalah berat.\\
+			Persamaan gerak pada sumbu $\hat{\theta}$ dapat diturunkan 
+			dengan mengingat $\alpha = \dfrac{d^2\theta}{dt^2} =\dfrac{M}{I}$, 
+			dimana $\alpha$ adalah momentum sudut, M adalah momen, dan I adalah inersia.
 			
 			Torsi ditentukan oleh proyeksi gaya ke arah tangensial:
 			\begin{equation}
@@ -200,10 +200,11 @@ Hasil dari perhitungan menggunakan metode analitik digrafikkan di https://plotly
 			
 	
 			
-### c Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
-Hasil dari perhitungan menggunakan metode numerik digrafikkan di https://plotly.com/~Avestory/1/#/
+### c 
+Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).Hasil dari perhitungan menggunakan metode numerik digrafikkan di https://plotly.com/~Avestory/1/#/ 
+
 		
-Dengan metode Euler,
+			Dengan metode Euler,
 			\begin{equation}
 			\dfrac{df}{dx}= \dfrac{f(x+L)-f(x)}{h} \Rightarrow \dfrac{f^{i+1}-f^i}{\Delta x}
 			\end{equation}
