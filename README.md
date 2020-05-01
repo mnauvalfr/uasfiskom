@@ -479,28 +479,59 @@ Hasil yang didapat adalah sebagai berikut:
 ### d
 Kode ini sama dengan kode untuk 4b, namun masukannya diganti menjadi x0 =101 dan y0 = 100
 ```JavaScript
-// Get interpretation of position and group from chromosome
-function getValues() {
-	var p = arguments[0];
-	
-	var xs = p.slice(0, 3);
-	var ys = p.slice(3, 6);
-	var gs = p.slice(6);
-	
-	var x = -1;
-	var y = -1;
-	var g = -1;
-	
-	/*
-	x = xs;
-	y = ys;
-	g = gs;
-	*/
-	
-	return [x, y, g];
+main();
+
+// Define main function
+function main() {
+    var p = "1011001";    //input kromoson yang diuji
+    [xs, ys, cs] = getValues(p);
+    var hasil = 1/(1+fitness(xs,ys));
+    console.log("p =",p);
+    console.log("x =",xs);
+    console.log("y =",ys);
+    console.log("c =",cs);
+    console.log("hasil = ",hasil);
+
 }
+
+function getValues() {
+    var p = arguments[0];
+
+    var xs = p.slice(0, 3);
+    var ys = p.slice(3, 6);
+    var cs = p.slice(6);
+
+    return [xs, ys, cs];
+}
+
+function fitness(a, b) {
+  return(Math.sqrt(Math.pow((a - 101), 2) + Math.pow((b - 100),2)));	//ganti nilai dalam akar untuk kromoson referensi
+}
+
 ```
 Kode ini dapat dijalankan secara daring menggunakan [jsconsole.com](jsconsole.com) atau aplikasi lainnya.
+Kromosom yang akan dicek, beserta hasilnya, adalah sebagai berikut
+#### a 1111011 , x = 111 dan y = 101
+
+![](UASFiskom0405.png)
+
+#### b 1001111 , x = 100 dan y = 111
+
+![](UASFiskom0406.png)
+
+#### c 1001001, x = 100 dan y = 100
+
+![](UASFiskom0407.png)
+
+#### d 1111111, x = 111 dan y = 111
+
+![](UASFiskom0408.png)
+
+#### e 1011001, x = 101 dan y = 100
+
+![](UASFiskom0409.png)
+
+Hasil maksimal yang diperoleh adalah kromoson 1011001 karena sama dengan kromoson threshold dengan fitness 1 dan kromoson yang paling mendekati 1011001 adalah kromoson 1001001 dengan nilai fitness 0,5 dari 5 iterasi yang dicoba.
 
 Selain dari kode di atas, juga tersedia file .js yang dapat langsung dieksekusi di browser yang ada di GitHub ini.
 ## Soal 5 | Research based learning
