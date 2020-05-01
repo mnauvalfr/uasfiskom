@@ -3,16 +3,16 @@
 
 ## Anggota
 Terdapat enam orang anggota pada kelompok 5 ini dengan fraksi kontribusinya pada pengerjaan tiap soal dapat dilihat dalam tabel berikut.
-
 | NIM      | Nama                  | Peran pada soal (dan fraksi kontribusinya)   |
 |----------|-----------------------|----------------------------------------------|
 |          |                       |                                              |
-| 10217010 | Panglima Einstein III | 1 (0.10) 2 (0.00) 3 (0.20) 4 (0.30) 5 (0.16) |
-| 10250098 | Teman Maxwell Jr.     | 1 (0.20) 2 (0.00) 3 (0.20) 4 (0.30) 5 (0.17) |
-| 10250123 | Densitas Kanonika     | 1 (0.10) 2 (0.00) 3 (0.20) 4 (0.30) 5 (0.16) |
-| 10250199 | Dualisma Singulariadi | 1 (0.20) 2 (0.00) 3 (0.00) 4 (0.10) 5 (0.17) |
-| 10250201 | Antrodinamika Laten   | 1 (0.20) 2 (0.50) 3 (0.20) 4 (0.00) 5 (0.17) |
-| 10250278 | Ergodik Kekal Tunak   | 1 (0.20) 2 (0.50) 3 (0.20) 4 (0.00) 5 (0.17) |
+| 10217023 | Muhammad Nauval FR    | 1 (0.16) 2 (0.16) 3 (0.16) 4 (0.16) 5 (0.17) |
+| 10217027 | Awla Fajri Assalam    | 1 (0.16) 2 (0.16) 3 (0.16) 4 (0.17) 5 (0.17) |
+| 10217038 | Steffan Rafly Tanasia | 1 (0.10) 2 (0.16) 3 (0.16) 4 (0.16) 5 (0.16) |
+| 10217042 | Humam                 | 1 (0.16) 2 (0.16) 3 (0.16) 4 (0.17) 5 (0.17) |
+| 10217045 | Hans Marvin Tanuardi  | 1 (0.10) 2 (0.16) 3 (0.16) 4 (0.16) 5 (0.16) |
+| 10217088 | Wilbert Irwan         | 1 (0.16) 2 (0.16) 3 (0.17) 4 (0.10) 5 (0.17) |
+
 |          |                       |                                              |
 |          | Total                 | 1 (1.00) 2 (1.00) 3 (1.00) 4 (1.00) 5 (1.00) |
 
@@ -305,7 +305,8 @@ dapat dijalankan secara daring menggunakan [http://cpp.sh/](http://cpp.sh/) atau
 ### a
 Dalam proses penyelesaian masalah, dataset yang telah diberikan dimasukkan terlebih dahulu ke dalam perangkat lunak Microsoft Excel untuk dianalisa bentuk persebaran datanya. Untuk tabel data pertama, terdapat persebaran data seperti berikut.\
 ![](UASFiskom0301.png)
-\Berdasarkan persebaran data yang terdapat di tabel di atas, terlihat jelas bahwa data dapat dipisahkan dengan metode perceptron. Dengan data yang telah didapatkan, dilakukan uji coba di laman daring Artificial Neural Network Playground yang disediakan oleh Tensorflow. Ketentuan dan batasan uji coba yang terdapat adalah sebagai berikut. \
+
+Berdasarkan persebaran data yang terdapat di tabel di atas, terlihat jelas bahwa data dapat dipisahkan dengan metode perceptron. Dengan data yang telah didapatkan, dilakukan uji coba di laman daring Artificial Neural Network Playground yang disediakan oleh Tensorflow. Ketentuan dan batasan uji coba yang terdapat adalah sebagai berikut. \
 ![](UASFiskom0302.png)
 
 \Berdasarkan data persebaran yang ada, dataset yang paling mirip dengan persebaran yang sudah dirumuskan adalah dataset yang dipilih. Ditentukan hanya satu neuron input karena dataset yang perlu dianalisa memiliki dua fitur di mana hanya satu fitur yang berkontribusi terhadap pembagian kelas (N1=1). Hidden layer tidak digunakan pada uji coba ini karena berdasarkan persebaran data, data dapat dipisah menggunakan linear boundary. Tanpa hidden layer yang mengandung satu neuron, dapat dilihat bahwa hanya dalam 47 iterasi (epoch), data sudah secara rapi terpisah. Sehingga, arsitektur yang digunakan pada dataset ini adalah 1-0-1.
@@ -320,6 +321,7 @@ Berdasarkan data persebaran yang ada, dataset yang paling mirip dengan persebara
 ### c
 Untuk penentuan JST, akan lebih mudah jika terlebih dahulu divisualisasikan. Pertama, data yang diperoleh dimasukkan pada perangkat lunak Excel dan diurutkan outputnya agar terpisah data yang memberikan output kelas 0 dan 1. Kemudian, dibuat diagram scatter dengan warna output 1 dan 0 berbeda dengan Excel dan ditarik garis boundary layer agar bisa ditentukan berapa boundary layer yang dibutuhkan.\
 ![](UASFiskom0305.png)		
+
 Dari gambar ini terlihat garis memiliki kemiringan artinya sumbu x dan sumbu y keduanya ikut berpengaruh terhadap hasil. Sehingga, bisa disimpulkan bahwa layer input yang digunakan adalah 2 yaitu fitur x dan y (N1=2).
 Dari gambar terlihat dibutuhkan minimal 3 boundary layer, jumlah boundary setara dengan jumlah neuron yang dibutuhkan hidden layer sehingga untuk hidden layer N2 dibutuhkan minimal 3 neuron untuk memisahkan. Agar training lebih cepat, untuk hidden layer N2, neuron dapat ditambah satu untuk menghaluskan boundary seperti diberikan oleh garis kuning sedangkan garis hijau diwakili oleh output layer. Tetapi, untuk kesederhanaan ANN maka sebenarnya cukup digunakan tiga neuron pada satu hidden layer (N2=3).
 Dari gambar, terlihat bahwa output yang diharapkan adalah pemisah yaitu 1 dan 0 sehingga bentuk output layer hanya memisahkan 2 data diskrit. Maka, output layer hanya memerlukan 1 yaitu pemisah 1 dan 0 (N3 = 1).Didapat N1 - N2 - N3 = 2 – 3 – 1.
