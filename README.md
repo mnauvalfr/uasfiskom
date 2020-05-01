@@ -5,7 +5,7 @@ Catatan: jawaban dituliskan dalam format .tex, lalu dikonversi ke format MD deng
 Soal No.1
 =========
 
-![image](UASFiskom0101.png =250x250))
+![image](UASFiskom0101.png =250x250)
 
 1.  Didapat persamaan dalam setiap arah gerak bandul sebagai berikut, untuk gerak sumbu \(x\):
 
