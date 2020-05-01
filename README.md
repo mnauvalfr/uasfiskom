@@ -64,7 +64,7 @@ Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.c
 		\begin{equation}
 		T \sin\theta -mg - F_{visko_y} =m\ddot{y}
 		\end{equation}
-		Substitusikan persamaan $	F_{visko_y}= 3\eta\pi D\ddot{y}	$ dan $\sin \theta =\dfrac{y}{l} $, sehingga akan didapat}
+		Substitusikan persamaan $F_{visko_y}= 3\eta\pi D\ddot{y}$ dan $\sin \theta =\dfrac{y}{l} $, sehingga akan didapat
 		\begin{equation}
 		\ddot{y} + \dfrac{3\pi\eta D}{m} \dot{y} + \dfrac {({\dot{x^2}+\dot{y^2}})y}{l^2} -\dfrac{gy^2}{l^2} = -g
 		\end{equation}
@@ -91,6 +91,7 @@ Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.c
 
 ### c
 Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
+
 		\item 
 		Untuk benda jatuh bebas tanpa gesekan udara,  maka persamaan (2) (gaya di sumbu x)  berubah menjadi }
 		\begin{equation}
