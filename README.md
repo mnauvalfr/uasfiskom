@@ -20,6 +20,7 @@ Terdapat enam orang anggota pada kelompok 5 ini dengan fraksi kontribusinya pada
 # Jawaban
 
 ## Soal 1 | Sistem bandul dengan sistem koordinat kartesian
+
 ![](UASFiskom0101.png)
 
 ### a
@@ -552,10 +553,19 @@ Tujuan dari analisis desain dan data nuklir adalah sebagai berikut:
 
 -Berapa daya reaktor?
 
-
-
 ### c Metode
 
+![](UASFiskom0501.png)
+
+![](UASFiskom0502.png)
+
+![](UASFiskom0503.png)
+
+![](UASFiskom0504.png)
+
+![](UASFiskom0505.png)
+
+![](UASFiskom0506.png)
 
 ### d Hasil dan diskusi
 Hasil dari pencarian fluks adalah distribusi fluks, Keff (koefisien pengali neutorn efektif) awal, dan fluks awal. Hasil dari pencarian daya adalahi nilai numerik daya.
