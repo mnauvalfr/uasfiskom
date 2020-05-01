@@ -8,7 +8,7 @@ Terdapat enam orang anggota pada kelompok 5 ini dengan fraksi kontribusinya pada
 |          |                       |                                              |
 | 10217023 | Muhammad Nauval FR    | 1 (0.16) 2 (0.16) 3 (0.16) 4 (0.16) 5 (0.17) |
 | 10217027 | Awla Fajri Assalam    | 1 (0.16) 2 (0.16) 3 (0.16) 4 (0.17) 5 (0.17) |
-| 10217038 | Steffan Rafly Tanasia | 1 (0.10) 2 (0.16) 3 (0.16) 4 (0.16) 5 (0.16) |
+| 10217038 | Steffan Rafly Tanasia | 1 (0.16) 2 (0.16) 3 (0.16) 4 (0.16) 5 (0.16) |
 | 10217042 | Humam                 | 1 (0.16) 2 (0.16) 3 (0.16) 4 (0.17) 5 (0.17) |
 | 10217045 | Hans Marvin Tanuardi  | 1 (0.10) 2 (0.16) 3 (0.16) 4 (0.16) 5 (0.16) |
 | 10217088 | Wilbert Irwan         | 1 (0.16) 2 (0.16) 3 (0.17) 4 (0.10) 5 (0.17) |
@@ -329,10 +329,36 @@ Penjelasan sebenarnya sudah dijelaskan dari 3.a hingga 3.c., didapatkan dari vis
 Arsitektur JST yang sederhana penting karena semakin rumit arsitektur maka iterasi yang dilakukan semakin lama dan panjang serta resource yang diperlukan juga meningkat. Kita harus seefisien mungkin dalam mengalokasikan computational resource terutama jika yang akan diolah data yang besar.
 
 ## Soal 4 | Algoritma genetik sederhana dengan JS
-
 ### a
 Fungsi yang dimaksud adalah
 
+```JavaScript
+	main();
+		// Define main function
+		function main() {
+		var p = "0010110";
+		[xs, ys, cs] = getValues(p);
+		console.log("p =",p);
+		console.log("x =",xs);
+		console.log("y =",ys);
+		console.log("c =",cs);
+		}
+		function getValues() {
+		var p = arguments[0];
+		var xs = p.slice(0, 3);
+		var ys = p.slice(3, 6);
+		var cs = p.slice(6);
+		
+		return [xs, ys, cs];
+		}
+}
+```
+
+dengan input kromoson 0010110. Hasilnya adalah
+\
+![](UASFiskom0401.png)
+
+### b
 ```JavaScript
 // Get interpretation of position and group from chromosome
 function getValues() {
@@ -356,14 +382,52 @@ function getValues() {
 }
 ```
 
-dengan .. (penjelasannya).
-
-### b
-
 ### c
-
+```JavaScript
+// Get interpretation of position and group from chromosome
+function getValues() {
+	var p = arguments[0];
+	
+	var xs = p.slice(0, 3);
+	var ys = p.slice(3, 6);
+	var gs = p.slice(6);
+	
+	var x = -1;
+	var y = -1;
+	var g = -1;
+	
+	/*
+	x = xs;
+	y = ys;
+	g = gs;
+	*/
+	
+	return [x, y, g];
+}
+```
 ### d
-
+```JavaScript
+// Get interpretation of position and group from chromosome
+function getValues() {
+	var p = arguments[0];
+	
+	var xs = p.slice(0, 3);
+	var ys = p.slice(3, 6);
+	var gs = p.slice(6);
+	
+	var x = -1;
+	var y = -1;
+	var g = -1;
+	
+	/*
+	x = xs;
+	y = ys;
+	g = gs;
+	*/
+	
+	return [x, y, g];
+}
+```
 
 ## Soal 5 | Research based learning
 
