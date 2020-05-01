@@ -1,4 +1,4 @@
-# Ujian kelompok 5
+# UAS FISKOM FI3201 Kelompok 05
 
 
 ## Anggota
@@ -535,25 +535,21 @@ Kromosom yang akan dicek, beserta hasilnya, adalah sebagai berikut
 
 Hasil maksimal yang diperoleh adalah kromoson 1011001 karena sama dengan kromoson threshold dengan fitness 1 dan kromoson yang paling mendekati 1011001 adalah kromoson 1001001 dengan nilai fitness 0,5 dari 5 iterasi yang dicoba. Kode juga tersedia di GitHub berupa file .txt terpisah yang dapat dicompile di jsconsole.com (https://github.com/mnauvalfr/uasfiskom/blob/master/4d.txt)
 
-Keempat kode dapat dijalankan secara langsung di browser dengan mengunduh file .rar di GitHub (https://github.com/mnauvalfr/uasfiskom/blob/master/UAS_Fiskom_4.rar), lalu dieksekusi di browser masing-masing. Saat menjalankan, seluruh isi zip harus dalam satu folder.
+
 ## Soal 5 | Research based learning
 
 ### a Tujuan
-Salah satu pemanfaatan terbaik untuk fisika komputasi adalah dalam analisis design dan data nuklir
-Tujuan dari analisis desain dan data nuklir adalah sebagai berikut:
-
--Menentukan distribusi flux sumber.
-
--Menentukan daya reaktor.
+Salah satu pemanfaatan terbaik untuk fisika komputasi adalah dalam analisis desain dan data reaktor nuklit
+Tujuan dari analisis desain dan data nuklir adalah menentukan performa sebuah reaktor nuklir ,yang ditentukan oleh beberapa variabel. Dalam RBL ini, yang dibahas hanya dua, yaitu fluks sumber neutron dan daya reaktor.
 
 
 ### b Rumusan masalah
 
 -Bagaimana grafik distribusi flux neutron suatu sumber reaktor silinder?
 
--Berapa daya reaktor?
+-Berapa daya yang dihasilkan reaktor?
 
-### c Metode
+### c Usulan metode
 
 ![](UASFiskom0501.png)
 
@@ -567,8 +563,9 @@ Tujuan dari analisis desain dan data nuklir adalah sebagai berikut:
 
 ![](UASFiskom0506.png)
 
-### d Hasil dan diskusi
-Hasil dari pencarian fluks adalah distribusi fluks, Keff (koefisien pengali neutorn efektif) awal, dan fluks awal. Hasil dari pencarian daya adalahi nilai numerik daya.
+### d Prakiraan hasil dan analisis
+Hasil dari pencarian fluks adalah distribusi fluks, Keff (koefisien pengali neutorn efektif) awal, dan fluks awal. Perhitungan fluks sangat penting untuk menentukan performa reaktor nuklir, salah satunya adalah daya. Flux yang dihasilkan akan turun mengikuti fungsi bessel. 
+Sementara itu, hasil perhitungan daya adalah nilai numerik.
 ### e Referensi
 1.Ding, Zechuan.(2018). Solving Bateman Equation for Xenon Transient Analysis Using Numerical Methods.
 
