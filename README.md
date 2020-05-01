@@ -21,7 +21,7 @@ Terdapat enam orang anggota pada kelompok 0 ini dengan fraksi kontribusinya pada
 # Jawaban
 
 ## Soal 1 | Sistem bandul dengan sistem koordinat kartesian
-![](UASFiskom0101.png =500x600)
+![](UASFiskom0101.png=500x600)
 
 ### a
 Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
