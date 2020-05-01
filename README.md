@@ -51,7 +51,8 @@ Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.c
 		\begin{equation}
 		-mg \cos\theta \sin\theta+\dfrac{mv^2}{l}cos\theta - 3\pi\eta D \dot{x} -  =m \ddot{x}
 		\end{equation}
-		Substitusikan persamaan $\cos \theta =\dfrac{x}{l} $ , $\sin \theta =\dfrac{y}{l} $, dan $ w =-mg$, sehingga akan didapat}
+		Substitusikan persamaan $\cos \theta =\dfrac{x}{l} $ , $\sin \theta =\dfrac{y}{l} $, dan $ w =-mg$, 
+		sehingga akan didapat
 		\begin{equation}
 		\ddot{x} +\dfrac{gxy}{l^2} + \dfrac{3\pi\eta D \dot{x}}{m} -\dfrac{v^2}{l^2}x =0 
 		\end{equation} \\
@@ -64,7 +65,8 @@ Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.c
 		\begin{equation}
 		T \sin\theta -mg - F_{visko_y} =m\ddot{y}
 		\end{equation}
-		Substitusikan persamaan $F_{visko_y}= 3\eta\pi D\ddot{y}$ dan $\sin \theta =\dfrac{y}{l} $, sehingga akan didapat
+		Substitusikan persamaan $F_{visko_y}= 3\eta\pi D\ddot{y}$ dan $\sin \theta =\dfrac{y}{l} $, 
+		sehingga akan didapat
 		\begin{equation}
 		\ddot{y} + \dfrac{3\pi\eta D}{m} \dot{y} + \dfrac {({\dot{x^2}+\dot{y^2}})y}{l^2} -\dfrac{gy^2}{l^2} = -g
 		\end{equation}
@@ -72,22 +74,23 @@ Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.c
 ### b 
 Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
 
-		\item Untuk persamaan gaya di sumbu x, 
+		Untuk persamaan gaya di sumbu x, 
 		\begin{equation}
 		\dfrac{g}{l^2}xy - \dfrac{3\pi\eta D}{m} \dot{x} - \dfrac{(\dot{x^2}+\dot{y^2})}{l^2}x =\ddot{x}
 		\end{equation} \\
-		terdapat suku $\ddot{x}$ sebagai komponen percepatan},$ \dfrac{3\pi\eta D}{m} \dot{x} $ sebagai komponen 
-		gaya gesek menggunakan hukum Stokes}, $-\dfrac{(\dot{x^2}+\dot{y^2})}{l^2}x$ sebagai komponen gaya sentripetal 
-		untuk tegangan tali}, dan $\dfrac{g}{l^2}xy$ adalah komponen gaya gravitasi di tegangan tali}.
-		
+		terdapat suku $\ddot{x}$ sebagai komponen percepatan,,$ \dfrac{3\pi\eta D}{m} \dot{x} $ 
+		sebagai komponen gaya gesek menggunakan hukum Stokes, 
+		$-\dfrac{(\dot{x^2}+\dot{y^2})}{l^2}x$ sebagai komponen gaya sentripetal untuk tegangan tali, 
+		dan $\dfrac{g}{l^2}xy$ adalah komponen gaya gravitasi di tegangan tali.		
 		Untuk persamaan gaya di sumbu y, 
 		\begin{equation}
 		\ddot{y} + \dfrac{3\pi\eta D}{m} \dot{y} + \dfrac {({\dot{x^2}+\dot{y^2}})y}{l^2} -\dfrac{gy^2}{l^2} = -g
 		\end{equation}
-		terdapat suku $\ddot{y}$ sebagai komponen percepatan},$ \dfrac{3\pi\eta D}{m} \dot{y} $ sebagai komponen 
-		gaya gesek menggunakan hukum Stokes}, $-\dfrac{(\dot{x^2}+\dot{y^2})}{l^2}y$ sebagai komponen gaya sentripetal 
-		untuk tegangan tali}, dan $\dfrac{gy^2}{l^2}$ adalah komponen gaya gravitasi di tegangan tali}. Selain itu, 
-		terdapat juga komponen $-g$ sebagai komponen gravitasi (vertikal sumbu y)}.
+		terdapat suku $\ddot{y}$ sebagai komponen percepatan,$ \dfrac{3\pi\eta D}{m} \dot{y} $ 
+		sebagai komponen gaya gesek menggunakan hukum Stokes, 
+		$-\dfrac{(\dot{x^2}+\dot{y^2})}{l^2}y$ sebagai komponen gaya sentripetal untuk tegangan tali, 
+		dan $\dfrac{gy^2}{l^2}$ adalah komponen gaya gravitasi di tegangan tali. 
+		Selain itu, terdapat juga komponen $-g$ sebagai komponen gravitasi (vertikal sumbu y).
 
 ### c
 Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
@@ -101,13 +104,14 @@ Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.c
 		\begin{equation}
 		\ddot{y} = -g
 		\end{equation}
-		Saat gaya jatuh bebas tanpa ada gesekan, komponen tegangan dan viskositas bisa diabaikan, sehingga $\eta =0$ dan $ l \approx \infty$.
+		Saat gaya jatuh bebas tanpa ada gesekan, komponen tegangan dan viskositas bisa diabaikan, 
+		sehingga $\eta =0$ dan $ l \approx \infty$.
 ### d
 Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
 
 		Untuk simpangan kecil, maka $\dfrac{y}{l} \approx 1$ dan $\dfrac{x}{l} \approx \theta$. 
 		Tanpa gaya gesek, maka $\eta =0$.
-			Sehingga, didapat 
+		Sehingga, didapat 
 		\begin{equation}
 		\ddot{x} - \dfrac{(\dot{x^2}+\dot{y^2})}{l}\theta + g\theta =0
 		\end{equation} \\
