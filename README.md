@@ -516,7 +516,7 @@ function fitness(a, b) {
 }
 
 ```
-Kode ini dapat dijalankan secara daring menggunakan [jsconsole.com](jsconsole.com) atau aplikasi lainnya.
+Kode ini dapat dijalankan secara daring menggunakan [jsconsole.com](jsconsole.com) atau aplikasi lainnya. Kode juga tersedia di GitHub berupa file .txt terpisah yang dapat dikopi untuk dicompile di [jsconsole.com](jsconsole.com) atau aplikasi lainnya.(https://github.com/mnauvalfr/uasfiskom/blob/master/4d.txt)
 Kromosom yang akan dicek, beserta hasilnya, adalah sebagai berikut
 #### a 1111011 , x = 111 dan y = 101
 
@@ -538,7 +538,7 @@ Kromosom yang akan dicek, beserta hasilnya, adalah sebagai berikut
 
 ![](UASFiskom0409.png)
 
-Hasil maksimal yang diperoleh adalah kromoson 1011001 karena sama dengan kromoson threshold dengan fitness 1 dan kromoson yang paling mendekati 1011001 adalah kromoson 1001001 dengan nilai fitness 0,5 dari 5 iterasi yang dicoba. Kode juga tersedia di GitHub berupa file .txt terpisah yang dapat dikopi untuk dicompile di [jsconsole.com](jsconsole.com) atau aplikasi lainnya.(https://github.com/mnauvalfr/uasfiskom/blob/master/4d.txt)
+Hasil maksimal yang diperoleh adalah kromoson 1011001 karena sama dengan kromoson threshold dengan fitness 1 dan kromoson yang paling mendekati 1011001 adalah kromoson 1001001 dengan nilai fitness 0,5 dari 5 iterasi yang dicoba. 
 
 
 ## Soal 5 | Research based learning
