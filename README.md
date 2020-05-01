@@ -25,7 +25,7 @@ Terdapat enam orang anggota pada kelompok 5 ini dengan fraksi kontribusinya pada
 ### a
 Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
 
-		\item
+
 		 Didapat persamaan dalam setiap arah gerak bandul sebagai berikut, untuk gerak  sumbu $x$:
 		\begin{equation}
 		\Sigma F_x = m \ddot{x}
@@ -54,7 +54,7 @@ Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.c
 		sehingga akan didapat
 		\begin{equation}
 		\ddot{x} +\dfrac{gxy}{l^2} + \dfrac{3\pi\eta D \dot{x}}{m} -\dfrac{v^2}{l^2}x =0 
-		\end{equation} \\
+		\end{equation} 
 		
 		Selanjutnya, akan diturunkan persamaan gerak untuk sumbu y. 
 		\begin{equation}
@@ -76,7 +76,7 @@ Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.c
 		Untuk persamaan gaya di sumbu x, 
 		\begin{equation}
 		\dfrac{g}{l^2}xy - \dfrac{3\pi\eta D}{m} \dot{x} - \dfrac{(\dot{x^2}+\dot{y^2})}{l^2}x =\ddot{x}
-		\end{equation} \\
+		\end{equation}
 		terdapat suku $\ddot{x}$ sebagai komponen percepatan,,$ \dfrac{3\pi\eta D}{m} \dot{x} $ 
 		sebagai komponen gaya gesek menggunakan hukum Stokes, 
 		$-\dfrac{(\dot{x^2}+\dot{y^2})}{l^2}x$ sebagai komponen gaya sentripetal untuk tegangan tali, 
@@ -94,12 +94,11 @@ Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.c
 ### c
 Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.com/dudung/jsxphys/4220729be109df8b94729ca4605562caa6d7596b/0.0.2/editor.html).
 
-		\item 
-		Untuk benda jatuh bebas tanpa gesekan udara,  maka persamaan (2) (gaya di sumbu x)  berubah menjadi }
+		Untuk benda jatuh bebas tanpa gesekan udara,  maka persamaan (2) (gaya di sumbu x)  berubah menjadi 
 		\begin{equation}
 		\ddot{x} = 0
 		\end{equation}
-		Persamaan (3) (gaya di sumbu y)  berubah menjadi }
+		Persamaan (3) (gaya di sumbu y)  berubah menjadi 
 		\begin{equation}
 		\ddot{y} = -g
 		\end{equation}
@@ -116,7 +115,7 @@ Jawaban berikut akan lebih jelas dilihat dalam [editor](https://rawcdn.githack.c
 		\end{equation}
 		\begin{equation}
 		\ddot{y} - \dfrac{(\dot{x^2}+\dot{y^2})}{l}\theta + g =-g
-		\end{equation}} 
+		\end{equation}
 ## Soal 2 | Bandul dengan sistem koordinat polar
 ![](UASFiskom0101.png)
 ### a 
@@ -357,29 +356,36 @@ Fungsi yang dimaksud adalah
 dengan input kromoson 0010110. Hasilnya adalah\
 
 ![](UASFiskom0401.png)
-Kode ini dapat dijalankan secara daring menggunakan jsconsole.com atau aplikasi lainnya.
+Kode ini dapat dijalankan secara daring menggunakan [jsconsole.com](jsconsole.com) atau aplikasi lainnya.
 ### b
 ```JavaScript
-// Get interpretation of position and group from chromosome
-function getValues() {
-	var p = arguments[0];
-	
-	var xs = p.slice(0, 3);
-	var ys = p.slice(3, 6);
-	var gs = p.slice(6);
-	
-	var x = -1;
-	var y = -1;
-	var g = -1;
-	
-	/*
-	x = xs;
-	y = ys;
-	g = gs;
-	*/
-	
-	return [x, y, g];
+Kode ini dibuat dengan nilai x_0 = 111 dan y_0 = 111
+
+main();
+// Define main function
+function main() {
+    var p = "1010110";
+    [xs, ys, cs] = getValues(p);
+    var hasil = 1/(1+fitness(xs,ys));			//fungsi utuh fitting
+    console.log("p =",p);
+    console.log("x =",xs);
+    console.log("y =",ys);
+    console.log("c =",cs);
+    console.log("hasil = ",hasil);
 }
+
+function getValues() {
+    var p = arguments[0];
+    var xs = p.slice(0, 3);
+    var ys = p.slice(3, 6);
+    var cs = p.slice(6);
+    return [xs, ys, cs];
+}
+
+function fitness(a, b) {			//fungsi untuk fitting (hanya bagian akar)
+  return(Math.sqrt(Math.pow((a - 111), 2) + Math.pow((b - 111),2)));
+}
+
 ```
 
 ### c
